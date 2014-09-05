@@ -1,0 +1,31 @@
+<head>
+  <title>tempapp</title>
+</head>
+
+<body>
+  <h1>Chatroom</h1>
+
+  {{> chatArea}}
+
+</body>
+
+
+<template name="chatArea">
+
+	<div id="chatlog">
+		Chat Log
+	</div>
+
+	<div id="name">
+		Name: <input id="name" type="text" value="">
+	</div>
+
+	<div id="chat">
+		Message: <input id="chat" type="text" value="">
+	</div>
+
+  <div id="button">
+    Post <input id="button" type="Submit" value="Submit">
+  </div>
+
+</template>
