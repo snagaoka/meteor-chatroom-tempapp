@@ -1,5 +1,4 @@
 if (Meteor.isClient) {
-
   Template.chatArea.events({
     'click #button': function(){
       var name = $('#name').val();
@@ -10,10 +9,7 @@ if (Meteor.isClient) {
 
       $('#chatlog').append('<li>' + name + ' : ' + chat + '</li>');
     }
-
   });
-
-
 }
 
 if (Meteor.isServer) {
